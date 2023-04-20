@@ -6,15 +6,15 @@ This repo was created to prove that ownership can be assigned indefinitely.
 The only limitation to a new assignment is that the data field of the account MUST be zeroed out first.
 
 ## Usage
-Requirements:
+Pre-Requirements:
 * solana cli
 * nodeJS
 
-From the root folder:
+### From the root folder:
 1 - cd first_owner/cli && npm install && cd ../../second_owner/cli && npm install  
 2 - solana-test-validator -r (This will start a local validator)  
 
-In another terminal:
+### In another terminal:
 3 - `cd first_owner/ && cargo build-sbf && solana program deploy target/deploy/first_owner.so --url localhost && cd ..`  
 4 - Paste the returned programId into the PROGRAM_ID field in first_owner/cli/constants.ts  
 5 - `cd second_owner/ && cargo build-sbf && solana program deploy target/deploy/second_owner.so --url localhost && cd ..`  
