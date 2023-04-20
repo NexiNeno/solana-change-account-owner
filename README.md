@@ -1,5 +1,5 @@
 # solana-change-account-owner
-It is a common misconception that once created and assigned ownership to a program, a Solana account owner cannot be changed again.
+It is a common misconception that once a Solana account is created and its ownership assigned to a program, the owner cannot be changed again.
 
 This repo was created to prove that ownership can be assigned indefinitely.
 
